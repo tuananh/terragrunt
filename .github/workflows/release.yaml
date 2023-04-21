@@ -37,13 +37,13 @@ jobs:
       - uses: chainguard-dev/actions/setup-melange@main
       - uses: chainguard-dev/actions/melange-keygen@main
       
-      - name: Build hello package
-        uses: chainguard-dev/actions/melange-build-pkg@main
-        with:
-          config: hello.melange.yaml
-          sign-with-key: true
-          signing-key-path: ${{ github.workspace }}/melange.rsa
-          archs: x86_64,aarch64
+      # - name: Build hello package
+      #   uses: chainguard-dev/actions/melange-build-pkg@main
+      #   with:
+      #     config: hello.melange.yaml
+      #     sign-with-key: true
+      #     signing-key-path: ${{ github.workspace }}/melange.rsa
+      #     archs: x86_64,aarch64
 
       - uses: chainguard-images/actions/apko-publish@6e9cfac3c961818d9c5ce339a9c559cc0c2e5464
         id: apko
