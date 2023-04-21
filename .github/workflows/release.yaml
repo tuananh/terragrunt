@@ -34,8 +34,8 @@ jobs:
 
       - uses: docker/setup-qemu-action@e81a89b1732b9c48d79cd809d8d81d79c4647a18 # v2.1.0
       - uses: sigstore/cosign-installer@main
-      - uses: chainguard-dev/actions/setup-melange@main
-      - uses: chainguard-dev/actions/melange-keygen@main
+      # - uses: chainguard-dev/actions/setup-melange@main
+      # - uses: chainguard-dev/actions/melange-keygen@main
       
       # - name: Build hello package
       #   uses: chainguard-dev/actions/melange-build-pkg@main
